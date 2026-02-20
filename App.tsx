@@ -70,10 +70,10 @@ const App: React.FC = () => {
                     <button 
                         onClick={() => setActiveTab(tab.id as any)}
                         className={`
-                            w-full py-4 px-6 rounded-full font-bold text-lg md:text-xl transition-all duration-300 flex items-center justify-center
+                            w-full py-4 px-6 rounded-full font-bold text-lg md:text-xl transition-all duration-300 flex items-center justify-center border
                             ${activeTab === tab.id 
-                                ? 'bg-hipex-red text-white shadow-lg shadow-red-500/30 scale-[1.02] ring-4 ring-red-50' 
-                                : 'bg-white text-slate-500 border border-slate-200 hover:border-red-200 hover:text-hipex-red hover:shadow-md'
+                                ? 'bg-hipex-red text-white border-hipex-red shadow-lg shadow-red-500/30 scale-[1.02] ring-4 ring-red-50' 
+                                : 'bg-white text-slate-500 border-slate-200 hover:border-red-200 hover:text-hipex-red hover:shadow-md'
                             }
                         `}
                     >
